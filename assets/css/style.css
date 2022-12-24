@@ -95,43 +95,53 @@ main section h2 {
 
 .avator {height: 300px;
 width: 300px;
+margin: 20px;
 border: var(--border)}
 
 .flex-container {
+  display: flex;
+  flex: 80%;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  grid-gap: 1.5rem;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
 
-flex: 80%;
-padding: 20px;}
 
-.work{
-flex: 80%;
-padding: 20px;
+.card1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border: var(--border)
+}  
+
+.imgcard {
+  object-fit: cover;
 }
 
 .caption {
   position: absolute;
    }
 
-.card {
-  align-items: flex-end;
-  justify-content: flex-end;
-}  
+
 .flex-container1 {
-  position: flex;
-  padding: 20px;
-  flex: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border: var(--border)
  }
 
-.flex-container2 {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
-.section {
-  flex-wrap: wrap;
-  width: 500px;
-  height: 500px;
-}
+h3 { display: flex;
+  padding: 10px;
+  margin: 10px;
+  color: var(--light);
+  background: #d9d9d9;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;}
 
 .flex-container2 img {
   height: 500px;
